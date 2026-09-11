@@ -23,12 +23,10 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-
                 <img
                     src={Logo}
                     alt="Logo"
-                    className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0"/>
-
+                    className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0" />
 
                 <ul className="hidden md:flex gap-4 items-center">
                     <li className="text-fuchsia-600">Home</li>
