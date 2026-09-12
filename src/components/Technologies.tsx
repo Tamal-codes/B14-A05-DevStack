@@ -77,18 +77,14 @@ const Technologies = ({ technologiPromise }: TechProps) => {
                                             {tech.category}
                                         </span>
                                         <span className="text-gray-400">{tech.level}</span>
-                                        <span className="ml-auto font-semibold text-amber-500 flex items-center gap-1">
-                                            ★ {tech.rating}
+                                        <span className="ml-auto font-semibold text-amber-500 flex items-center gap-1"> ★ {tech.rating}
                                         </span>
                                     </div>
 
                                     <button
                                         onClick={() => handleAddStack(tech)}
                                         disabled={isAdded}
-                                        className={`btn btn-sm w-full rounded-lg font-medium border-0 ${isAdded
-                                                ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                                                : "bg-slate-900 hover:bg-slate-800 text-white"
-                                            }`} >
+                                        className={`btn btn-sm w-full rounded-lg font-medium border-0 ${isAdded ? "bg-gray-300 text-gray-500 cursor-not-allowed" : "bg-slate-900 hover:bg-slate-800 text-white" }`} >
                                         {isAdded ? "Added to Stack" : "Add to Stack"}
                                     </button>
                                 </div>
@@ -108,24 +104,28 @@ const Technologies = ({ technologiPromise }: TechProps) => {
                             <p className="text-xs text-gray-400 text-center py-4">
                                 No technology added yet.
                             </p>
-                        ) : (
+                            ) : (
                             selectedTechs.map((item) => (
                                 <div
                                     key={item.id}
                                     className="flex items-center justify-between border border-gray-100 p-3 rounded-xl shadow-2xs"  >
                                     <div className="flex items-center gap-3">
-                                        <img src={item.icon} alt={item.name} className="w-7 h-7" />
+                                        <img src={item.icon} alt={item.name} className="w-7 h-7" /> 
+
                                         <div>
                                             <h4 className="text-xs font-bold text-slate-800">{item.name}</h4>
                                             <p className="text-[10px] text-gray-400">{item.category}</p>
                                         </div>
+
                                     </div>
+
                                     <button
                                         onClick={() => handleRemoveSingle(item.id)}
                                         className="text-gray-400 hover:text-red-500 font-bold text-sm px-1" >
                                         ✕
                                     </button>
                                 </div>
+
                             ))
                         )}
                     </div>
@@ -136,9 +136,13 @@ const Technologies = ({ technologiPromise }: TechProps) => {
                         className="btn btn-outline btn-error btn-sm w-full rounded-lg text-xs font-semibold disabled:border-gray-200 disabled:text-gray-300" >
                         Remove All
                     </button>
+
                 </div>
+
             </div>
+
         </div>
+        
     );
 };
 
