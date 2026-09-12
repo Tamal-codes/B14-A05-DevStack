@@ -13,8 +13,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="dropdown-content menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                    >
+                        className="dropdown-content menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li className="text-fuchsia-600"><a>Home</a></li>
                         <li><a>Technologies</a></li>
                         <li><a>Projects</a></li>
@@ -24,8 +23,7 @@ const Navbar = () => {
                 </div>
 
                 <img
-                    src={Logo}
-                    alt="Logo"
+                    src={Logo} alt="Logo"
                     className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0" />
 
                 <ul className="hidden md:flex gap-4 items-center">

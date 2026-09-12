@@ -20,20 +20,17 @@ const Technologies = ({ technologiPromise }: TechProps) => {
         }
 
         setSelectedTechs([...selectedTechs, tech]);
-        toast.success(`${tech.name} added to your stack!`);
-    };
+        toast.success(`${tech.name} added to your stack!`)};
 
     const handleRemoveSingle = (id: string | number) => {
         const updated = selectedTechs.filter((item) => item.id !== id);
         setSelectedTechs(updated);
-        toast.info("Technology removed!");
-    };
+        toast.info("Technology removed!")};
 
     const handleRemoveAll = () => {
         if (selectedTechs.length === 0) return;
         setSelectedTechs([]);
-        toast.warn("Cleared all technologies from stack!");
-    };
+        toast.warn("Cleared all technologies from stack!")};
 
     return (
         <div className="max-w-7xl mx-auto py-10 px-4">
@@ -145,4 +142,4 @@ const Technologies = ({ technologiPromise }: TechProps) => {
     );
 };
 
-export default Technologies;
+export default Technologies; 
