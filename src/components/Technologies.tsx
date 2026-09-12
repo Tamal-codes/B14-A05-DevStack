@@ -17,7 +17,7 @@ const Technologies = ({ technologiPromise }: TechProps) => {
         if (isAlreadyAdded) {
             toast.error(`${tech.name} is already in your stack!`);
             return;
-        }
+         }
 
         setSelectedTechs([...selectedTechs, tech]);
         toast.success(`${tech.name} added to your stack!`)};
@@ -142,7 +142,7 @@ const Technologies = ({ technologiPromise }: TechProps) => {
             </div>
 
         </div>
-        
+
     );
 };
 
