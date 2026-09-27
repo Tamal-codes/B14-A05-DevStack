@@ -23,7 +23,7 @@
 - **Duplicate Prevention & Alerts** — Prevents adding the same technology multiple times with instant UI feedback powered by `react-toastify`.
 - **Mobile-First Responsive UI** — Fully responsive layout optimized for smooth operation across mobile, tablet, and desktop viewports.
 
-<== [ Here are some Question and Answer simple and shortly ] =>>
+<<= [ Here are some Question and Answer simple and shortly ] =>>
 
 Q1: What is JSX, and why is it used in React?
 
@@ -51,5 +51,4 @@ Ans: Conditional rendering ,aim pourpose is showing the differet Ui based on the
 
 Q7: How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
-Ans: To pass the data Parent to Child i use Props , and Child to Parent i used a callback function as a props.
---- 
+Ans: To pass the data Parent to Child i use Props , and Child to Parent i used a callback function as a props. 
